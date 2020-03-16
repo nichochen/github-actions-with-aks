@@ -62,7 +62,8 @@ I created the container registry and Kubernetes cluster on Azure with following 
     # create and setup a private container registry on Azure
     az acr create -g $name -n $name --sku basic
     az acr update -n $name --admin-enabled 
-    # retre
+    
+    # retreive the admin password
     az acr credential show -n $name
     
     # create a kubernetes cluster on Azure with Azure Kubernetes Service (AKS)
