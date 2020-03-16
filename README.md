@@ -2,15 +2,15 @@
 
 # Containerizing and deploying appication with GitHub Actions & Azure Kubernetes Service
 
-This demo is going to show you how to containerize and deploy a simple applitoin with CICD tool GtiHub Acions.
+This is the script which I used in the GitHub and AKS demo.
 
-## The App
+## The Application
 The app used in the demo is the lovely HTML5 mini game Clumsy Bird. Fork the game to your own GitHub account.
 
     https://github.com/ellisonleao/clumsy-bird
 
 
-## Docker file
+## Dockerfile
 The Dockerfile to containerize the application.
 
     FROM nginx
@@ -18,7 +18,7 @@ The Dockerfile to containerize the application.
 
 
 ## GitHub Actions Workflow
-Following is the workflow definition. Please replace the `REPLACE_WITH_YOUR_UNIQUE_ID`.
+Following is the workflow definition. Please replace the placeholder `REPLACE_WITH_YOUR_UNIQUE_ID`.
 
     on: [push]
     
